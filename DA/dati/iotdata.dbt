@@ -1,0 +1,1818 @@
+{
+    "cabina": 61,
+    "ponte": 3,
+    "rilevazione": 1,
+    "dataeora": 1769004480.938867,
+    "temperatura": 33.49,
+    "umidita": 56.11
+}
+
+{
+    "cabina": 26,
+    "ponte": 3,
+    "rilevazione": 2,
+    "dataeora": 1769004485.9392872,
+    "temperatura": 22.75,
+    "umidita": 75.23
+}
+
+{
+    "cabina": 39,
+    "ponte": 2,
+    "rilevazione": 3,
+    "dataeora": 1769004490.9396095,
+    "temperatura": 23.3,
+    "umidita": 25.02
+}
+
+{
+    "cabina": 20,
+    "ponte": 3,
+    "rilevazione": 4,
+    "dataeora": 1769004495.9398737,
+    "temperatura": 36.75,
+    "umidita": 35.0
+}
+
+{
+    "cabina": 72,
+    "ponte": 2,
+    "rilevazione": 5,
+    "dataeora": 1769004500.9400826,
+    "temperatura": 34.84,
+    "umidita": 27.32
+}
+
+{
+    "cabina": 42,
+    "ponte": 1,
+    "rilevazione": 6,
+    "dataeora": 1769004505.9403248,
+    "temperatura": 13.55,
+    "umidita": 76.69
+}
+
+{
+    "cabina": 14,
+    "ponte": 3,
+    "rilevazione": 7,
+    "dataeora": 1769004510.9406185,
+    "temperatura": 35.74,
+    "umidita": 86.43
+}
+
+{
+    "cabina": 82,
+    "ponte": 3,
+    "rilevazione": 8,
+    "dataeora": 1769004515.9408522,
+    "temperatura": 18.6,
+    "umidita": 53.99
+}
+
+{
+    "cabina": 25,
+    "ponte": 2,
+    "rilevazione": 9,
+    "dataeora": 1769004520.9410884,
+    "temperatura": 29.26,
+    "umidita": 50.82
+}
+
+{
+    "cabina": 3,
+    "ponte": 3,
+    "rilevazione": 10,
+    "dataeora": 1769004525.9413316,
+    "temperatura": 26.95,
+    "umidita": 45.48
+}
+
+{
+    "cabina": 93,
+    "ponte": 3,
+    "rilevazione": 11,
+    "dataeora": 1769004530.9418695,
+    "temperatura": 15.39,
+    "umidita": 29.84
+}
+
+{
+    "cabina": 90,
+    "ponte": 1,
+    "rilevazione": 12,
+    "dataeora": 1769004535.9425292,
+    "temperatura": 33.41,
+    "umidita": 72.86
+}
+
+{
+    "cabina": 84,
+    "ponte": 2,
+    "rilevazione": 13,
+    "dataeora": 1769004540.943181,
+    "temperatura": 36.27,
+    "umidita": 45.38
+}
+
+{
+    "cabina": 75,
+    "ponte": 2,
+    "rilevazione": 14,
+    "dataeora": 1769004545.9434726,
+    "temperatura": 26.29,
+    "umidita": 69.55
+}
+
+{
+    "cabina": 92,
+    "ponte": 3,
+    "rilevazione": 15,
+    "dataeora": 1769004550.944026,
+    "temperatura": 35.35,
+    "umidita": 34.29
+}
+
+{
+    "cabina": 74,
+    "ponte": 3,
+    "rilevazione": 16,
+    "dataeora": 1769004555.944252,
+    "temperatura": 13.37,
+    "umidita": 64.0
+}
+
+{
+    "cabina": 19,
+    "ponte": 1,
+    "rilevazione": 17,
+    "dataeora": 1769004560.9444952,
+    "temperatura": 17.98,
+    "umidita": 60.41
+}
+
+{
+    "cabina": 10,
+    "ponte": 3,
+    "rilevazione": 18,
+    "dataeora": 1769004565.9447496,
+    "temperatura": 16.36,
+    "umidita": 78.96
+}
+
+{
+    "cabina": 90,
+    "ponte": 2,
+    "rilevazione": 19,
+    "dataeora": 1769004570.9451172,
+    "temperatura": 25.08,
+    "umidita": 64.27
+}
+
+{
+    "cabina": 52,
+    "ponte": 1,
+    "rilevazione": 20,
+    "dataeora": 1769004575.9456723,
+    "temperatura": 31.54,
+    "umidita": 63.12
+}
+
+{
+    "cabina": 20,
+    "ponte": 1,
+    "rilevazione": 21,
+    "dataeora": 1769004580.945927,
+    "temperatura": 20.88,
+    "umidita": 39.21
+}
+
+{
+    "cabina": 76,
+    "ponte": 3,
+    "rilevazione": 22,
+    "dataeora": 1769004585.946522,
+    "temperatura": 36.78,
+    "umidita": 77.94
+}
+
+{
+    "cabina": 28,
+    "ponte": 3,
+    "rilevazione": 23,
+    "dataeora": 1769004590.9471846,
+    "temperatura": 11.7,
+    "umidita": 75.99
+}
+
+{
+    "cabina": 75,
+    "ponte": 2,
+    "rilevazione": 24,
+    "dataeora": 1769004595.9478226,
+    "temperatura": 19.29,
+    "umidita": 24.15
+}
+
+{
+    "cabina": 37,
+    "ponte": 1,
+    "rilevazione": 25,
+    "dataeora": 1769004600.948527,
+    "temperatura": 17.16,
+    "umidita": 60.44
+}
+
+{
+    "cabina": 5,
+    "ponte": 2,
+    "rilevazione": 26,
+    "dataeora": 1769004605.9489536,
+    "temperatura": 15.6,
+    "umidita": 42.13
+}
+
+{
+    "cabina": 25,
+    "ponte": 1,
+    "rilevazione": 27,
+    "dataeora": 1769004610.9495785,
+    "temperatura": 30.85,
+    "umidita": 75.99
+}
+
+{
+    "cabina": 41,
+    "ponte": 2,
+    "rilevazione": 28,
+    "dataeora": 1769004615.950172,
+    "temperatura": 34.83,
+    "umidita": 39.68
+}
+
+{
+    "cabina": 52,
+    "ponte": 2,
+    "rilevazione": 29,
+    "dataeora": 1769004620.9508185,
+    "temperatura": 31.15,
+    "umidita": 55.51
+}
+
+{
+    "cabina": 87,
+    "ponte": 2,
+    "rilevazione": 30,
+    "dataeora": 1769004625.9512153,
+    "temperatura": 12.09,
+    "umidita": 58.55
+}
+
+{
+    "cabina": 21,
+    "ponte": 3,
+    "rilevazione": 31,
+    "dataeora": 1769004630.9514713,
+    "temperatura": 14.12,
+    "umidita": 46.16
+}
+
+{
+    "cabina": 7,
+    "ponte": 2,
+    "rilevazione": 32,
+    "dataeora": 1769004635.9517174,
+    "temperatura": 14.47,
+    "umidita": 31.24
+}
+
+{
+    "cabina": 10,
+    "ponte": 3,
+    "rilevazione": 33,
+    "dataeora": 1769004640.952356,
+    "temperatura": 37.32,
+    "umidita": 71.6
+}
+
+{
+    "cabina": 85,
+    "ponte": 1,
+    "rilevazione": 34,
+    "dataeora": 1769004645.9529185,
+    "temperatura": 24.69,
+    "umidita": 25.7
+}
+
+{
+    "cabina": 23,
+    "ponte": 2,
+    "rilevazione": 35,
+    "dataeora": 1769004650.9532392,
+    "temperatura": 34.62,
+    "umidita": 57.97
+}
+
+{
+    "cabina": 28,
+    "ponte": 1,
+    "rilevazione": 36,
+    "dataeora": 1769004655.95386,
+    "temperatura": 32.84,
+    "umidita": 33.36
+}
+
+{
+    "cabina": 78,
+    "ponte": 1,
+    "rilevazione": 37,
+    "dataeora": 1769004660.9547675,
+    "temperatura": 36.83,
+    "umidita": 78.39
+}
+
+{
+    "cabina": 2,
+    "ponte": 1,
+    "rilevazione": 38,
+    "dataeora": 1769004665.9553761,
+    "temperatura": 17.1,
+    "umidita": 41.79
+}
+
+{
+    "cabina": 98,
+    "ponte": 1,
+    "rilevazione": 39,
+    "dataeora": 1769004670.9559484,
+    "temperatura": 16.7,
+    "umidita": 34.77
+}
+
+{
+    "cabina": 62,
+    "ponte": 3,
+    "rilevazione": 40,
+    "dataeora": 1769004675.9564142,
+    "temperatura": 17.61,
+    "umidita": 63.68
+}
+
+{
+    "cabina": 37,
+    "ponte": 3,
+    "rilevazione": 41,
+    "dataeora": 1769004680.956731,
+    "temperatura": 28.45,
+    "umidita": 74.81
+}
+
+{
+    "cabina": 79,
+    "ponte": 3,
+    "rilevazione": 42,
+    "dataeora": 1769004685.9572406,
+    "temperatura": 10.18,
+    "umidita": 44.27
+}
+
+{
+    "cabina": 31,
+    "ponte": 3,
+    "rilevazione": 43,
+    "dataeora": 1769004690.9574873,
+    "temperatura": 12.81,
+    "umidita": 76.82
+}
+
+{
+    "cabina": 19,
+    "ponte": 3,
+    "rilevazione": 44,
+    "dataeora": 1769004695.9580724,
+    "temperatura": 27.94,
+    "umidita": 88.59
+}
+
+{
+    "cabina": 47,
+    "ponte": 3,
+    "rilevazione": 45,
+    "dataeora": 1769004700.9583607,
+    "temperatura": 15.51,
+    "umidita": 34.79
+}
+
+{
+    "cabina": 36,
+    "ponte": 3,
+    "rilevazione": 46,
+    "dataeora": 1769004705.9589248,
+    "temperatura": 35.44,
+    "umidita": 23.62
+}
+
+{
+    "cabina": 87,
+    "ponte": 1,
+    "rilevazione": 47,
+    "dataeora": 1769004710.9595382,
+    "temperatura": 29.5,
+    "umidita": 21.6
+}
+
+{
+    "cabina": 49,
+    "ponte": 2,
+    "rilevazione": 48,
+    "dataeora": 1769004715.960139,
+    "temperatura": 35.73,
+    "umidita": 71.2
+}
+
+{
+    "cabina": 33,
+    "ponte": 3,
+    "rilevazione": 49,
+    "dataeora": 1769004720.9605563,
+    "temperatura": 19.42,
+    "umidita": 46.39
+}
+
+{
+    "cabina": 82,
+    "ponte": 2,
+    "rilevazione": 50,
+    "dataeora": 1769004725.9611602,
+    "temperatura": 22.55,
+    "umidita": 71.2
+}
+
+{
+    "cabina": 86,
+    "ponte": 2,
+    "rilevazione": 51,
+    "dataeora": 1769004730.9615319,
+    "temperatura": 31.64,
+    "umidita": 26.27
+}
+
+{
+    "cabina": 67,
+    "ponte": 2,
+    "rilevazione": 52,
+    "dataeora": 1769004735.9620757,
+    "temperatura": 27.76,
+    "umidita": 73.67
+}
+
+{
+    "cabina": 16,
+    "ponte": 2,
+    "rilevazione": 53,
+    "dataeora": 1769004740.9626658,
+    "temperatura": 10.35,
+    "umidita": 78.95
+}
+
+{
+    "cabina": 64,
+    "ponte": 1,
+    "rilevazione": 54,
+    "dataeora": 1769004745.9630265,
+    "temperatura": 31.88,
+    "umidita": 57.75
+}
+
+{
+    "cabina": 45,
+    "ponte": 1,
+    "rilevazione": 55,
+    "dataeora": 1769004750.963616,
+    "temperatura": 17.48,
+    "umidita": 81.34
+}
+
+{
+    "cabina": 97,
+    "ponte": 1,
+    "rilevazione": 56,
+    "dataeora": 1769004755.964242,
+    "temperatura": 39.74,
+    "umidita": 54.03
+}
+
+{
+    "cabina": 98,
+    "ponte": 2,
+    "rilevazione": 57,
+    "dataeora": 1769004760.9645648,
+    "temperatura": 32.97,
+    "umidita": 65.65
+}
+
+{
+    "cabina": 35,
+    "ponte": 3,
+    "rilevazione": 58,
+    "dataeora": 1769004765.964833,
+    "temperatura": 18.7,
+    "umidita": 85.35
+}
+
+{
+    "cabina": 40,
+    "ponte": 3,
+    "rilevazione": 59,
+    "dataeora": 1769004770.9653594,
+    "temperatura": 20.31,
+    "umidita": 57.89
+}
+
+{
+    "cabina": 54,
+    "ponte": 2,
+    "rilevazione": 60,
+    "dataeora": 1769004775.965958,
+    "temperatura": 18.49,
+    "umidita": 39.68
+}
+
+{
+    "cabina": 89,
+    "ponte": 2,
+    "rilevazione": 61,
+    "dataeora": 1769004780.9662414,
+    "temperatura": 29.06,
+    "umidita": 82.55
+}
+
+{
+    "cabina": 13,
+    "ponte": 1,
+    "rilevazione": 62,
+    "dataeora": 1769004785.966512,
+    "temperatura": 32.25,
+    "umidita": 23.56
+}
+
+{
+    "cabina": 21,
+    "ponte": 1,
+    "rilevazione": 63,
+    "dataeora": 1769004790.966879,
+    "temperatura": 33.63,
+    "umidita": 45.13
+}
+
+{
+    "cabina": 90,
+    "ponte": 1,
+    "rilevazione": 64,
+    "dataeora": 1769004795.9671047,
+    "temperatura": 29.45,
+    "umidita": 42.71
+}
+
+{
+    "cabina": 42,
+    "ponte": 3,
+    "rilevazione": 65,
+    "dataeora": 1769004800.9673834,
+    "temperatura": 37.87,
+    "umidita": 57.78
+}
+
+{
+    "cabina": 97,
+    "ponte": 3,
+    "rilevazione": 66,
+    "dataeora": 1769004805.967663,
+    "temperatura": 21.46,
+    "umidita": 48.96
+}
+
+{
+    "cabina": 27,
+    "ponte": 2,
+    "rilevazione": 67,
+    "dataeora": 1769004810.9679048,
+    "temperatura": 36.33,
+    "umidita": 41.92
+}
+
+{
+    "cabina": 33,
+    "ponte": 1,
+    "rilevazione": 68,
+    "dataeora": 1769004815.9680912,
+    "temperatura": 17.96,
+    "umidita": 83.46
+}
+
+{
+    "cabina": 55,
+    "ponte": 1,
+    "rilevazione": 69,
+    "dataeora": 1769004820.9683857,
+    "temperatura": 25.44,
+    "umidita": 86.61
+}
+
+{
+    "cabina": 34,
+    "ponte": 3,
+    "rilevazione": 70,
+    "dataeora": 1769004825.9688873,
+    "temperatura": 22.9,
+    "umidita": 35.1
+}
+
+{
+    "cabina": 66,
+    "ponte": 2,
+    "rilevazione": 71,
+    "dataeora": 1769004830.9692183,
+    "temperatura": 38.52,
+    "umidita": 22.94
+}
+
+{
+    "cabina": 62,
+    "ponte": 1,
+    "rilevazione": 72,
+    "dataeora": 1769004835.9694438,
+    "temperatura": 14.89,
+    "umidita": 30.57
+}
+
+{
+    "cabina": 67,
+    "ponte": 3,
+    "rilevazione": 73,
+    "dataeora": 1769004840.9698682,
+    "temperatura": 15.16,
+    "umidita": 80.11
+}
+
+{
+    "cabina": 78,
+    "ponte": 1,
+    "rilevazione": 74,
+    "dataeora": 1769004845.9703827,
+    "temperatura": 18.23,
+    "umidita": 29.54
+}
+
+{
+    "cabina": 90,
+    "ponte": 3,
+    "rilevazione": 75,
+    "dataeora": 1769004850.9709892,
+    "temperatura": 21.43,
+    "umidita": 29.25
+}
+
+{
+    "cabina": 32,
+    "ponte": 3,
+    "rilevazione": 76,
+    "dataeora": 1769004855.9715044,
+    "temperatura": 23.8,
+    "umidita": 47.27
+}
+
+{
+    "cabina": 30,
+    "ponte": 3,
+    "rilevazione": 77,
+    "dataeora": 1769004860.971884,
+    "temperatura": 36.68,
+    "umidita": 63.8
+}
+
+{
+    "cabina": 67,
+    "ponte": 2,
+    "rilevazione": 78,
+    "dataeora": 1769004865.9722378,
+    "temperatura": 30.8,
+    "umidita": 66.26
+}
+
+{
+    "cabina": 94,
+    "ponte": 3,
+    "rilevazione": 79,
+    "dataeora": 1769004870.9728916,
+    "temperatura": 17.08,
+    "umidita": 87.9
+}
+
+{
+    "cabina": 74,
+    "ponte": 2,
+    "rilevazione": 80,
+    "dataeora": 1769004875.973483,
+    "temperatura": 38.16,
+    "umidita": 68.65
+}
+
+{
+    "cabina": 54,
+    "ponte": 2,
+    "rilevazione": 81,
+    "dataeora": 1769004880.9737608,
+    "temperatura": 32.09,
+    "umidita": 36.15
+}
+
+{
+    "cabina": 81,
+    "ponte": 2,
+    "rilevazione": 82,
+    "dataeora": 1769004885.9740667,
+    "temperatura": 33.54,
+    "umidita": 45.06
+}
+
+{
+    "cabina": 48,
+    "ponte": 2,
+    "rilevazione": 83,
+    "dataeora": 1769004890.9745524,
+    "temperatura": 19.12,
+    "umidita": 36.86
+}
+
+{
+    "cabina": 55,
+    "ponte": 1,
+    "rilevazione": 84,
+    "dataeora": 1769004895.974986,
+    "temperatura": 24.31,
+    "umidita": 42.08
+}
+
+{
+    "cabina": 83,
+    "ponte": 1,
+    "rilevazione": 85,
+    "dataeora": 1769004900.9755883,
+    "temperatura": 38.22,
+    "umidita": 86.34
+}
+
+{
+    "cabina": 45,
+    "ponte": 1,
+    "rilevazione": 86,
+    "dataeora": 1769004905.9761236,
+    "temperatura": 20.63,
+    "umidita": 53.69
+}
+
+{
+    "cabina": 40,
+    "ponte": 3,
+    "rilevazione": 87,
+    "dataeora": 1769004910.9767313,
+    "temperatura": 16.71,
+    "umidita": 80.84
+}
+
+{
+    "cabina": 9,
+    "ponte": 1,
+    "rilevazione": 88,
+    "dataeora": 1769004915.977107,
+    "temperatura": 14.79,
+    "umidita": 22.69
+}
+
+{
+    "cabina": 54,
+    "ponte": 3,
+    "rilevazione": 89,
+    "dataeora": 1769004920.9777024,
+    "temperatura": 39.23,
+    "umidita": 24.86
+}
+
+{
+    "cabina": 93,
+    "ponte": 2,
+    "rilevazione": 90,
+    "dataeora": 1769004925.9782386,
+    "temperatura": 17.54,
+    "umidita": 68.14
+}
+
+{
+    "cabina": 27,
+    "ponte": 1,
+    "rilevazione": 91,
+    "dataeora": 1769004930.9785287,
+    "temperatura": 36.65,
+    "umidita": 71.07
+}
+
+{
+    "cabina": 68,
+    "ponte": 3,
+    "rilevazione": 92,
+    "dataeora": 1769004935.979158,
+    "temperatura": 26.97,
+    "umidita": 53.58
+}
+
+{
+    "cabina": 88,
+    "ponte": 3,
+    "rilevazione": 93,
+    "dataeora": 1769004940.979953,
+    "temperatura": 29.24,
+    "umidita": 35.48
+}
+
+{
+    "cabina": 71,
+    "ponte": 2,
+    "rilevazione": 94,
+    "dataeora": 1769004945.980398,
+    "temperatura": 30.59,
+    "umidita": 34.28
+}
+
+{
+    "cabina": 73,
+    "ponte": 1,
+    "rilevazione": 95,
+    "dataeora": 1769004950.9810653,
+    "temperatura": 21.16,
+    "umidita": 45.14
+}
+
+{
+    "cabina": 52,
+    "ponte": 2,
+    "rilevazione": 96,
+    "dataeora": 1769004955.981481,
+    "temperatura": 34.24,
+    "umidita": 82.36
+}
+
+{
+    "cabina": 2,
+    "ponte": 2,
+    "rilevazione": 97,
+    "dataeora": 1769004960.98195,
+    "temperatura": 19.53,
+    "umidita": 49.12
+}
+
+{
+    "cabina": 90,
+    "ponte": 3,
+    "rilevazione": 98,
+    "dataeora": 1769004965.982643,
+    "temperatura": 27.28,
+    "umidita": 32.63
+}
+
+{
+    "cabina": 2,
+    "ponte": 2,
+    "rilevazione": 99,
+    "dataeora": 1769004970.9830353,
+    "temperatura": 31.18,
+    "umidita": 20.87
+}
+
+{
+    "cabina": 38,
+    "ponte": 1,
+    "rilevazione": 100,
+    "dataeora": 1769004975.9833422,
+    "temperatura": 25.92,
+    "umidita": 21.25
+}
+
+{
+    "cabina": 63,
+    "ponte": 2,
+    "rilevazione": 101,
+    "dataeora": 1769004980.983629,
+    "temperatura": 29.68,
+    "umidita": 34.87
+}
+
+{
+    "cabina": 98,
+    "ponte": 1,
+    "rilevazione": 102,
+    "dataeora": 1769004985.9842713,
+    "temperatura": 24.3,
+    "umidita": 81.24
+}
+
+{
+    "cabina": 58,
+    "ponte": 2,
+    "rilevazione": 103,
+    "dataeora": 1769004990.9848921,
+    "temperatura": 26.22,
+    "umidita": 69.09
+}
+
+{
+    "cabina": 33,
+    "ponte": 1,
+    "rilevazione": 104,
+    "dataeora": 1769004995.9854448,
+    "temperatura": 27.91,
+    "umidita": 26.56
+}
+
+{
+    "cabina": 97,
+    "ponte": 1,
+    "rilevazione": 105,
+    "dataeora": 1769005000.9859,
+    "temperatura": 29.92,
+    "umidita": 36.03
+}
+
+{
+    "cabina": 60,
+    "ponte": 1,
+    "rilevazione": 106,
+    "dataeora": 1769005005.9862175,
+    "temperatura": 23.41,
+    "umidita": 78.47
+}
+
+{
+    "cabina": 57,
+    "ponte": 2,
+    "rilevazione": 107,
+    "dataeora": 1769005010.986517,
+    "temperatura": 25.06,
+    "umidita": 62.07
+}
+
+{
+    "cabina": 67,
+    "ponte": 1,
+    "rilevazione": 108,
+    "dataeora": 1769005015.987102,
+    "temperatura": 19.21,
+    "umidita": 83.37
+}
+
+{
+    "cabina": 45,
+    "ponte": 1,
+    "rilevazione": 109,
+    "dataeora": 1769005020.9876382,
+    "temperatura": 29.12,
+    "umidita": 69.79
+}
+
+{
+    "cabina": 33,
+    "ponte": 2,
+    "rilevazione": 110,
+    "dataeora": 1769005025.9879596,
+    "temperatura": 23.0,
+    "umidita": 65.6
+}
+
+{
+    "cabina": 99,
+    "ponte": 2,
+    "rilevazione": 111,
+    "dataeora": 1769005030.9882498,
+    "temperatura": 14.21,
+    "umidita": 69.14
+}
+
+{
+    "cabina": 22,
+    "ponte": 3,
+    "rilevazione": 112,
+    "dataeora": 1769005035.9885101,
+    "temperatura": 12.64,
+    "umidita": 55.84
+}
+
+{
+    "cabina": 46,
+    "ponte": 1,
+    "rilevazione": 113,
+    "dataeora": 1769005040.9891284,
+    "temperatura": 27.15,
+    "umidita": 74.43
+}
+
+{
+    "cabina": 69,
+    "ponte": 2,
+    "rilevazione": 114,
+    "dataeora": 1769005045.9896986,
+    "temperatura": 33.53,
+    "umidita": 88.79
+}
+
+{
+    "cabina": 62,
+    "ponte": 2,
+    "rilevazione": 115,
+    "dataeora": 1769005050.9900568,
+    "temperatura": 29.11,
+    "umidita": 41.8
+}
+
+{
+    "cabina": 91,
+    "ponte": 2,
+    "rilevazione": 116,
+    "dataeora": 1769005055.9905047,
+    "temperatura": 36.3,
+    "umidita": 77.57
+}
+
+{
+    "cabina": 86,
+    "ponte": 1,
+    "rilevazione": 117,
+    "dataeora": 1769005060.9911697,
+    "temperatura": 14.28,
+    "umidita": 24.52
+}
+
+{
+    "cabina": 10,
+    "ponte": 2,
+    "rilevazione": 118,
+    "dataeora": 1769005065.9918048,
+    "temperatura": 37.82,
+    "umidita": 78.62
+}
+
+{
+    "cabina": 64,
+    "ponte": 1,
+    "rilevazione": 119,
+    "dataeora": 1769005070.9920163,
+    "temperatura": 27.56,
+    "umidita": 42.31
+}
+
+{
+    "cabina": 20,
+    "ponte": 3,
+    "rilevazione": 120,
+    "dataeora": 1769005075.992584,
+    "temperatura": 13.76,
+    "umidita": 32.97
+}
+
+{
+    "cabina": 39,
+    "ponte": 2,
+    "rilevazione": 121,
+    "dataeora": 1769005080.9931028,
+    "temperatura": 31.64,
+    "umidita": 81.9
+}
+
+{
+    "cabina": 2,
+    "ponte": 3,
+    "rilevazione": 122,
+    "dataeora": 1769005085.993678,
+    "temperatura": 11.01,
+    "umidita": 39.75
+}
+
+{
+    "cabina": 34,
+    "ponte": 2,
+    "rilevazione": 123,
+    "dataeora": 1769005090.9941635,
+    "temperatura": 13.83,
+    "umidita": 72.38
+}
+
+{
+    "cabina": 93,
+    "ponte": 3,
+    "rilevazione": 124,
+    "dataeora": 1769005095.9943824,
+    "temperatura": 21.36,
+    "umidita": 62.88
+}
+
+{
+    "cabina": 23,
+    "ponte": 3,
+    "rilevazione": 125,
+    "dataeora": 1769005100.9947684,
+    "temperatura": 23.58,
+    "umidita": 36.47
+}
+
+{
+    "cabina": 54,
+    "ponte": 2,
+    "rilevazione": 126,
+    "dataeora": 1769005105.9950979,
+    "temperatura": 16.99,
+    "umidita": 82.79
+}
+
+{
+    "cabina": 86,
+    "ponte": 2,
+    "rilevazione": 127,
+    "dataeora": 1769005110.9954062,
+    "temperatura": 25.5,
+    "umidita": 56.71
+}
+
+{
+    "cabina": 38,
+    "ponte": 1,
+    "rilevazione": 128,
+    "dataeora": 1769005115.9959254,
+    "temperatura": 30.49,
+    "umidita": 78.24
+}
+
+{
+    "cabina": 46,
+    "ponte": 1,
+    "rilevazione": 129,
+    "dataeora": 1769005120.9962258,
+    "temperatura": 24.06,
+    "umidita": 84.85
+}
+
+{
+    "cabina": 7,
+    "ponte": 2,
+    "rilevazione": 130,
+    "dataeora": 1769005125.996507,
+    "temperatura": 39.81,
+    "umidita": 61.19
+}
+
+{
+    "cabina": 31,
+    "ponte": 2,
+    "rilevazione": 131,
+    "dataeora": 1769005130.997114,
+    "temperatura": 20.41,
+    "umidita": 55.89
+}
+
+{
+    "cabina": 58,
+    "ponte": 2,
+    "rilevazione": 132,
+    "dataeora": 1769005135.9976032,
+    "temperatura": 17.72,
+    "umidita": 81.48
+}
+
+{
+    "cabina": 39,
+    "ponte": 1,
+    "rilevazione": 133,
+    "dataeora": 1769005140.998084,
+    "temperatura": 39.43,
+    "umidita": 80.21
+}
+
+{
+    "cabina": 87,
+    "ponte": 1,
+    "rilevazione": 134,
+    "dataeora": 1769005145.9987583,
+    "temperatura": 24.97,
+    "umidita": 62.52
+}
+
+{
+    "cabina": 54,
+    "ponte": 2,
+    "rilevazione": 135,
+    "dataeora": 1769005150.999293,
+    "temperatura": 14.39,
+    "umidita": 51.76
+}
+
+{
+    "cabina": 16,
+    "ponte": 2,
+    "rilevazione": 136,
+    "dataeora": 1769005155.9998555,
+    "temperatura": 33.99,
+    "umidita": 45.49
+}
+
+{
+    "cabina": 12,
+    "ponte": 3,
+    "rilevazione": 137,
+    "dataeora": 1769005161.0005345,
+    "temperatura": 21.61,
+    "umidita": 54.7
+}
+
+{
+    "cabina": 74,
+    "ponte": 1,
+    "rilevazione": 138,
+    "dataeora": 1769005166.0007567,
+    "temperatura": 31.48,
+    "umidita": 27.89
+}
+
+{
+    "cabina": 8,
+    "ponte": 1,
+    "rilevazione": 139,
+    "dataeora": 1769005171.0012705,
+    "temperatura": 37.18,
+    "umidita": 70.1
+}
+
+{
+    "cabina": 95,
+    "ponte": 1,
+    "rilevazione": 1,
+    "dataeora": 1769005263.4365492,
+    "temperatura": 20.59,
+    "umidita": 62.62
+}
+
+{
+    "cabina": 14,
+    "ponte": 1,
+    "rilevazione": 2,
+    "dataeora": 1769005268.4369967,
+    "temperatura": 31.75,
+    "umidita": 54.37
+}
+
+{
+    "cabina": 51,
+    "ponte": 2,
+    "rilevazione": 3,
+    "dataeora": 1769005273.4373205,
+    "temperatura": 31.81,
+    "umidita": 30.24
+}
+
+{
+    "cabina": 10,
+    "ponte": 2,
+    "rilevazione": 4,
+    "dataeora": 1769005278.4379187,
+    "temperatura": 17.87,
+    "umidita": 53.92
+}
+
+{
+    "cabina": 68,
+    "ponte": 3,
+    "rilevazione": 5,
+    "dataeora": 1769005283.4382553,
+    "temperatura": 35.25,
+    "umidita": 80.13
+}
+
+{
+    "cabina": 48,
+    "ponte": 1,
+    "rilevazione": 6,
+    "dataeora": 1769005288.4388387,
+    "temperatura": 31.87,
+    "umidita": 87.52
+}
+
+{
+    "cabina": 3,
+    "ponte": 2,
+    "rilevazione": 7,
+    "dataeora": 1769005293.439251,
+    "temperatura": 12.32,
+    "umidita": 38.46
+}
+
+{
+    "cabina": 73,
+    "ponte": 1,
+    "rilevazione": 8,
+    "dataeora": 1769005298.4397728,
+    "temperatura": 30.87,
+    "umidita": 80.35
+}
+
+{
+    "cabina": 12,
+    "ponte": 1,
+    "rilevazione": 9,
+    "dataeora": 1769005303.4403226,
+    "temperatura": 12.18,
+    "umidita": 85.59
+}
+
+{
+    "cabina": 27,
+    "ponte": 3,
+    "rilevazione": 10,
+    "dataeora": 1769005308.4409208,
+    "temperatura": 17.88,
+    "umidita": 24.46
+}
+
+{
+    "cabina": 91,
+    "ponte": 3,
+    "rilevazione": 11,
+    "dataeora": 1769005313.441432,
+    "temperatura": 31.7,
+    "umidita": 87.18
+}
+
+{
+    "cabina": 2,
+    "ponte": 2,
+    "rilevazione": 12,
+    "dataeora": 1769005318.4417698,
+    "temperatura": 29.96,
+    "umidita": 39.19
+}
+
+{
+    "cabina": 30,
+    "ponte": 3,
+    "rilevazione": 13,
+    "dataeora": 1769005323.4422438,
+    "temperatura": 10.37,
+    "umidita": 80.47
+}
+
+{
+    "cabina": 78,
+    "ponte": 1,
+    "rilevazione": 14,
+    "dataeora": 1769005328.4425857,
+    "temperatura": 16.51,
+    "umidita": 24.11
+}
+
+{
+    "cabina": 9,
+    "ponte": 1,
+    "rilevazione": 15,
+    "dataeora": 1769005333.4432294,
+    "temperatura": 12.92,
+    "umidita": 67.97
+}
+
+{
+    "cabina": 20,
+    "ponte": 1,
+    "rilevazione": 16,
+    "dataeora": 1769005338.4438498,
+    "temperatura": 34.4,
+    "umidita": 49.49
+}
+
+{
+    "cabina": 36,
+    "ponte": 1,
+    "rilevazione": 17,
+    "dataeora": 1769005343.444222,
+    "temperatura": 36.1,
+    "umidita": 65.51
+}
+
+{
+    "cabina": 66,
+    "ponte": 3,
+    "rilevazione": 18,
+    "dataeora": 1769005348.4445274,
+    "temperatura": 37.08,
+    "umidita": 70.12
+}
+
+{
+    "cabina": 96,
+    "ponte": 1,
+    "rilevazione": 19,
+    "dataeora": 1769005353.44495,
+    "temperatura": 11.65,
+    "umidita": 29.23
+}
+
+{
+    "cabina": 74,
+    "ponte": 3,
+    "rilevazione": 20,
+    "dataeora": 1769005358.4457407,
+    "temperatura": 11.17,
+    "umidita": 78.79
+}
+
+{
+    "cabina": 34,
+    "ponte": 1,
+    "rilevazione": 21,
+    "dataeora": 1769005363.4461064,
+    "temperatura": 21.34,
+    "umidita": 31.64
+}
+
+{
+    "cabina": 38,
+    "ponte": 3,
+    "rilevazione": 22,
+    "dataeora": 1769005368.4466565,
+    "temperatura": 27.87,
+    "umidita": 68.38
+}
+
+{
+    "cabina": 7,
+    "ponte": 1,
+    "rilevazione": 23,
+    "dataeora": 1769005373.4472413,
+    "temperatura": 19.1,
+    "umidita": 81.29
+}
+
+{
+    "cabina": 73,
+    "ponte": 2,
+    "rilevazione": 24,
+    "dataeora": 1769005378.447539,
+    "temperatura": 16.87,
+    "umidita": 76.45
+}
+
+{
+    "cabina": 95,
+    "ponte": 1,
+    "rilevazione": 25,
+    "dataeora": 1769005383.448189,
+    "temperatura": 10.06,
+    "umidita": 36.44
+}
+
+{
+    "cabina": 21,
+    "ponte": 3,
+    "rilevazione": 26,
+    "dataeora": 1769005388.4488106,
+    "temperatura": 33.81,
+    "umidita": 51.48
+}
+
+{
+    "cabina": 73,
+    "ponte": 2,
+    "rilevazione": 27,
+    "dataeora": 1769005393.4494586,
+    "temperatura": 38.53,
+    "umidita": 22.62
+}
+
+{
+    "cabina": 72,
+    "ponte": 3,
+    "rilevazione": 28,
+    "dataeora": 1769005398.4500656,
+    "temperatura": 30.84,
+    "umidita": 72.4
+}
+
+{
+    "cabina": 33,
+    "ponte": 3,
+    "rilevazione": 29,
+    "dataeora": 1769005403.4504573,
+    "temperatura": 10.14,
+    "umidita": 73.2
+}
+
+{
+    "cabina": 67,
+    "ponte": 3,
+    "rilevazione": 30,
+    "dataeora": 1769005408.450909,
+    "temperatura": 12.04,
+    "umidita": 79.7
+}
+
+{
+    "cabina": 22,
+    "ponte": 3,
+    "rilevazione": 31,
+    "dataeora": 1769005413.4513946,
+    "temperatura": 16.95,
+    "umidita": 72.28
+}
+
+{
+    "cabina": 18,
+    "ponte": 1,
+    "rilevazione": 32,
+    "dataeora": 1769005418.4521074,
+    "temperatura": 11.0,
+    "umidita": 50.63
+}
+
+{
+    "cabina": 93,
+    "ponte": 1,
+    "rilevazione": 33,
+    "dataeora": 1769005423.4528182,
+    "temperatura": 36.88,
+    "umidita": 28.48
+}
+
+{
+    "cabina": 55,
+    "ponte": 3,
+    "rilevazione": 34,
+    "dataeora": 1769005428.4531157,
+    "temperatura": 11.86,
+    "umidita": 81.53
+}
+
+{
+    "cabina": 15,
+    "ponte": 1,
+    "rilevazione": 35,
+    "dataeora": 1769005433.4535077,
+    "temperatura": 38.13,
+    "umidita": 24.72
+}
+
+{
+    "cabina": 39,
+    "ponte": 3,
+    "rilevazione": 36,
+    "dataeora": 1769005438.454155,
+    "temperatura": 38.94,
+    "umidita": 44.26
+}
+
+{
+    "cabina": 80,
+    "ponte": 3,
+    "rilevazione": 37,
+    "dataeora": 1769005443.45466,
+    "temperatura": 29.55,
+    "umidita": 74.54
+}
+
+{
+    "cabina": 77,
+    "ponte": 3,
+    "rilevazione": 38,
+    "dataeora": 1769005448.4549804,
+    "temperatura": 23.82,
+    "umidita": 25.47
+}
+
+{
+    "cabina": 97,
+    "ponte": 3,
+    "rilevazione": 39,
+    "dataeora": 1769005453.4555376,
+    "temperatura": 14.52,
+    "umidita": 58.55
+}
+
+{
+    "cabina": 65,
+    "ponte": 1,
+    "rilevazione": 40,
+    "dataeora": 1769005458.4561286,
+    "temperatura": 37.11,
+    "umidita": 20.02
+}
+
+{
+    "cabina": 95,
+    "ponte": 1,
+    "rilevazione": 41,
+    "dataeora": 1769005463.456803,
+    "temperatura": 38.6,
+    "umidita": 84.33
+}
+
+{
+    "cabina": 99,
+    "ponte": 2,
+    "rilevazione": 42,
+    "dataeora": 1769005468.4573581,
+    "temperatura": 16.61,
+    "umidita": 72.22
+}
+
+{
+    "cabina": 42,
+    "ponte": 1,
+    "rilevazione": 43,
+    "dataeora": 1769005473.4579258,
+    "temperatura": 13.25,
+    "umidita": 61.85
+}
+
+{
+    "cabina": 13,
+    "ponte": 3,
+    "rilevazione": 44,
+    "dataeora": 1769005478.4582622,
+    "temperatura": 19.94,
+    "umidita": 51.83
+}
+
+{
+    "cabina": 66,
+    "ponte": 3,
+    "rilevazione": 45,
+    "dataeora": 1769005483.4587686,
+    "temperatura": 38.36,
+    "umidita": 45.38
+}
+
+{
+    "cabina": 9,
+    "ponte": 2,
+    "rilevazione": 46,
+    "dataeora": 1769005488.4593596,
+    "temperatura": 23.06,
+    "umidita": 38.73
+}
+
+{
+    "cabina": 72,
+    "ponte": 3,
+    "rilevazione": 47,
+    "dataeora": 1769005493.460024,
+    "temperatura": 20.58,
+    "umidita": 54.71
+}
+
+{
+    "cabina": 99,
+    "ponte": 3,
+    "rilevazione": 48,
+    "dataeora": 1769005498.4605463,
+    "temperatura": 15.5,
+    "umidita": 65.49
+}
+
+{
+    "cabina": 79,
+    "ponte": 2,
+    "rilevazione": 49,
+    "dataeora": 1769005503.4610083,
+    "temperatura": 36.48,
+    "umidita": 69.19
+}
+
+{
+    "cabina": 83,
+    "ponte": 3,
+    "rilevazione": 50,
+    "dataeora": 1769005508.4615824,
+    "temperatura": 17.3,
+    "umidita": 81.17
+}
+
+{
+    "cabina": 14,
+    "ponte": 1,
+    "rilevazione": 51,
+    "dataeora": 1769005513.4619029,
+    "temperatura": 31.29,
+    "umidita": 43.12
+}
+
+{
+    "cabina": 39,
+    "ponte": 2,
+    "rilevazione": 52,
+    "dataeora": 1769005518.462448,
+    "temperatura": 31.71,
+    "umidita": 71.9
+}
+
+{
+    "cabina": 65,
+    "ponte": 1,
+    "rilevazione": 53,
+    "dataeora": 1769005523.4627402,
+    "temperatura": 20.68,
+    "umidita": 48.83
+}
+
+{
+    "cabina": 9,
+    "ponte": 1,
+    "rilevazione": 54,
+    "dataeora": 1769005528.463266,
+    "temperatura": 24.44,
+    "umidita": 56.87
+}
+
+{
+    "cabina": 93,
+    "ponte": 2,
+    "rilevazione": 55,
+    "dataeora": 1769005533.4638262,
+    "temperatura": 33.93,
+    "umidita": 48.56
+}
+
+{
+    "cabina": 98,
+    "ponte": 2,
+    "rilevazione": 56,
+    "dataeora": 1769005538.464482,
+    "temperatura": 15.33,
+    "umidita": 30.15
+}
+
+{
+    "cabina": 48,
+    "ponte": 3,
+    "rilevazione": 57,
+    "dataeora": 1769005543.4647253,
+    "temperatura": 18.88,
+    "umidita": 76.19
+}
+
+{
+    "cabina": 69,
+    "ponte": 3,
+    "rilevazione": 58,
+    "dataeora": 1769005548.4651582,
+    "temperatura": 24.58,
+    "umidita": 26.84
+}
+
+{
+    "cabina": 21,
+    "ponte": 1,
+    "rilevazione": 59,
+    "dataeora": 1769005553.4658644,
+    "temperatura": 32.53,
+    "umidita": 68.44
+}
+
+{
+    "cabina": 48,
+    "ponte": 2,
+    "rilevazione": 60,
+    "dataeora": 1769005558.466554,
+    "temperatura": 20.15,
+    "umidita": 32.77
+}
+
+{
+    "cabina": 69,
+    "ponte": 2,
+    "rilevazione": 61,
+    "dataeora": 1769005563.4670107,
+    "temperatura": 31.78,
+    "umidita": 21.31
+}
+
+{
+    "cabina": 35,
+    "ponte": 1,
+    "rilevazione": 62,
+    "dataeora": 1769005568.4673278,
+    "temperatura": 16.92,
+    "umidita": 26.93
+}
+
+{
+    "cabina": 2,
+    "ponte": 1,
+    "rilevazione": 63,
+    "dataeora": 1769005573.4679177,
+    "temperatura": 14.84,
+    "umidita": 89.74
+}
+
