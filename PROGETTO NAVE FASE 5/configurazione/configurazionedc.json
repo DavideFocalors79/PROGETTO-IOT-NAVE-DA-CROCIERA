@@ -1,0 +1,18 @@
+{
+  "camera": 1,
+  "ponte": 1,
+  "sensore": {
+    "nome": "DHT11",
+    "tmin": 0,
+    "tmax": 40,
+    "umin": 20,
+    "umax": 90,
+    "erroret": 2,
+    "erroreu": 4
+  },
+  "identita": "DC001-00001",
+  "cablaggio": {
+    "segnale": 0,
+    "gnd": 38
+  }
+}
