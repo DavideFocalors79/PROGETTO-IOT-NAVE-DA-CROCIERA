@@ -6,7 +6,7 @@
   "IP_SERVER": "127.0.0.1",
   "PORTA_SERVER": 9090,
   "TOPIC": "iotnavi/GIOT-001/misure",
-  "BROKER": "thingsboard.cloud",
+  "BROKER": "192.168.x.x",
   "PORTA_BROKER": 1883,
   "TOKEN_TB": "Wq6DY3KiyIqMaOizBil7"
 }

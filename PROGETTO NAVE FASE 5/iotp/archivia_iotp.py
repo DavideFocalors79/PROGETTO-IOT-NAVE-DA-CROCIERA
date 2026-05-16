@@ -58,6 +58,7 @@ def main():
     client = mqtt.Client()
     
     # Assegna le funzioni di callback per la connessione e la ricezione dei messaggi
+    client.username_pw_set("Wq6DY3KiyIqMaOizBil7")
     client.on_connect = on_connect
     client.on_message = on_message
 
