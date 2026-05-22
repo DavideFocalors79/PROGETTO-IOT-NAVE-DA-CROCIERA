@@ -1,7 +1,7 @@
 {
   "topic": "iotnavi/+/misure",
   "broker": {
-    "host": "192.168.x.x",
+    "host": "broker.hivemq.com",
     "porta": 1883
   },
   "dbfile": {
