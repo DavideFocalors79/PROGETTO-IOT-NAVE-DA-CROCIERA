@@ -1,17 +1,22 @@
-import random
+from machine import Pin
+import dht
 
-
-def on_temperatura(N):
-    """Genera una simulazione della temperatura.
-    Il dato generato è casuale e in un range tra 10-40.
+def on_temperatura(pin, N, tmin, tmax):
     """
-    temperatura = round(random.uniform(0, 40), N)
-    return temperatura
-
-
-def on_umidita(N):
-    """Genera una simulazione dell'umidità.
-    Il dato generato è casuale e in un range tra 20-90.
+    Metodo per la misurazione della temperatura su 
+    scheda con mycropython
     """
-    umidita = round(random.uniform(20, 90), N)
-    return umidita
+
+    sensor = dht.DHT11(Pin(pin))
+    sensor.measure()
+    return sensor.temperature()
+
+
+def on_umidita(pin, N, umin, umax):
+    """
+    Metodo per la misurazione dell'umidità su 
+    scheda con mycropython
+    """
+    sensor = dht.DHT11(Pin(pin))
+    sensor.measure()
+    return sensor.humidity()

@@ -2,30 +2,30 @@ import json
 import socket
 import threading
 from pathlib import Path
-
 import paho.mqtt.client as mqtt
+import cripto  # Importiamo il modulo di criptazione per HiveMQ
 
 BASE_DIR = Path(__file__).resolve().parent
 CONFIG_DIR = BASE_DIR / "configurazione"
 PARAMETRI_FILE = CONFIG_DIR / "parametri.json"
 
-
 def recv_line(sock):
     data = bytearray()
     while True:
-        chunk = sock.recv(1)
-        if not chunk:
+        try:
+            chunk = sock.recv(1)
+            if not chunk:
+                return ""
+            if chunk == b"\n":
+                break
+            data.extend(chunk)
+        except OSError:
             return ""
-        if chunk == b"\n":
-            break
-        data.extend(chunk)
     return data.decode("utf-8", errors="replace").strip()
-
 
 def build_telemetry(dato_dc, identita_giot, n_decimali):
     osservazione = dato_dc["osservazione"]
     sensore = dato_dc.get("sensore", {})
-
     return {
         "temperature": round(osservazione["temperatura"], n_decimali),
         "humidity": round(osservazione["umidita"], n_decimali),
@@ -35,81 +35,68 @@ def build_telemetry(dato_dc, identita_giot, n_decimali):
         "deviceId": dato_dc["identita"],
         "sensorName": sensore.get("nome", "DHT11"),
         "tMin": sensore.get("tmin", 0),
-        "tMax": sensore.get("tmax", 50),
-        "uMin": sensore.get("umin", 0),
-        "uMax": sensore.get("umax", 100),
-        "serialNumber": osservazione["rilevazione"]
+        "tMax": sensore.get("tmax", 40)
     }
 
-
-def publish_telemetry(client, telemetry, ts=None):
-    if ts is None:
-        payload = telemetry
-    else:
-        payload = {
-            "ts": ts * 1000,
-            "values": telemetry
-        }
-
-    result = client.publish(
-        "v1/devices/me/telemetry",
-        json.dumps(payload, ensure_ascii=False),
-        qos=1
-    )
-    return result
-
-
-def gestisci_client(conn, addr, parametri, client_mqtt):
-    print(f"\n[+] Nuovo dispositivo connesso da: {addr}")
-
-    tempo_rilevazione = int(parametri["TEMPO_RILEVAZIONE"])
+def gestisci_client(conn, addr, parametri, client_tb, client_hive):
+    print(f"[SOCKET] Connessione accettata da {addr}")
     n_decimali = int(parametri["N_DECIMALI"])
     identita_giot = parametri["IDENTITA_GIOT"]
+    
+    # Invio dei parametri iniziali al DC (Client)
+    init_payload = {
+        "TEMPO_RILEVAZIONE": parametri["TEMPO_RILEVAZIONE"],
+        "N_DECIMALI": n_decimali
+    }
+    try:
+        conn.sendall((json.dumps(init_payload) + "\n").encode("utf-8"))
+    except OSError:
+        conn.close()
+        return
 
-    with conn:
-        parametri_init = {
-            "TEMPO_RILEVAZIONE": tempo_rilevazione,
-            "N_DECIMALI": n_decimali
-        }
-
+    while True:
+        line = recv_line(conn)
+        if not line:
+            print(f"[SOCKET] Connessione chiusa da {addr}")
+            break
+        
         try:
-            conn.sendall((json.dumps(parametri_init) + "\n").encode("utf-8"))
-        except OSError as e:
-            print(f"Errore nell'invio dei parametri iniziali a {addr}: {e}")
-            return
+            dato_dc = json.loads(line)
+            osservazione = dato_dc["osservazione"]
+            
+            # --- 1. INVIO A THINGSBOARD (In chiaro) ---
+            telemetria_tb = build_telemetry(dato_dc, identita_giot, n_decimali)
+            payload_tb = json.dumps(telemetria_tb)
+            res_tb = client_tb.publish(parametri["TOPIC_TB"], payload_tb)
+            if res_tb.rc != 0:
+                print(f"[TB ERROR] Errore publish ThingsBoard: codice {res_tb.rc}")
+            else:
+                print("[TB SUCCESS] Dati inviati alla Dashboard di ThingsBoard")
 
-        while True:
-            try:
-                line = recv_line(conn)
-                if not line:
-                    break
+            # --- 2. INVIO A HIVEMQ / ARCHIVIA (Criptato) ---
+            dati_archivia = {
+                "cabina": dato_dc["camera"],
+                "ponte": dato_dc["ponte"],
+                "temperaturam": round(osservazione["temperatura"], n_decimali),
+                "umiditam": round(osservazione["umidita"], n_decimali),
+                "dataeora": osservazione["dataeora"],
+                "invionumero": osservazione["rilevazione"],
+                "identita": identita_giot
+            }
+            payload_json = json.dumps(dati_archivia, ensure_ascii=False)
+            payload_criptato = cripto.criptazione(payload_json)
+            
+            res_hive = client_hive.publish(parametri["TOPIC_HIVEMQ"], payload_criptato)
+            if res_hive.rc != 0:
+                print(f"[HIVEMQ ERROR] Errore publish HiveMQ: codice {res_hive.rc}")
+            else:
+                print("[HIVEMQ SUCCESS] Dati criptati inviati a HiveMQ per l'archiviazione")
 
-                dato_dc = json.loads(line)
+        except Exception as e:
+            print(f"Errore elaborazione dati: {e}")
+            break
 
-                print(f"[{addr[1]}] Dato ricevuto da dc.py:")
-                print(json.dumps(dato_dc, indent=4, ensure_ascii=False))
-
-                timestamp = int(dato_dc["osservazione"]["dataeora"])
-                telemetry = build_telemetry(dato_dc, identita_giot, n_decimali)
-
-                print(f"[{addr[1]}] Telemetria inviata a ThingsBoard:")
-                print(json.dumps(telemetry, indent=4, ensure_ascii=False))
-
-                result = publish_telemetry(client_mqtt, telemetry, timestamp)
-
-                if result.rc == mqtt.MQTT_ERR_SUCCESS:
-                    print(f"[{addr[1]}] Invio MQTT a ThingsBoard completato")
-                else:
-                    print(f"[{addr[1]}] Errore publish MQTT: codice {result.rc}")
-
-            except json.JSONDecodeError as e:
-                print(f"[{addr[1]}] JSON non valido ricevuto dal client: {e}")
-            except Exception as e:
-                print(f"[{addr[1]}] Errore di comunicazione con il client: {e}")
-                break
-
-    print(f"[-] Dispositivo {addr} disconnesso")
-
+    conn.close()
 
 def main():
     with open(PARAMETRI_FILE, "r", encoding="utf-8") as f:
@@ -117,28 +104,36 @@ def main():
 
     ip_server = parametri["IP_SERVER"]
     porta_server = int(parametri["PORTA_SERVER"])
-    broker = parametri["BROKER"]
     porta_broker = int(parametri["PORTA_BROKER"])
-    token_tb = parametri["TOKEN_TB"]
 
-    client = mqtt.Client()
-    client.username_pw_set(token_tb)
+    # Configurazione Client 1: ThingsBoard
+    client_tb = mqtt.Client(mqtt.CallbackAPIVersion.VERSION1)
+    client_tb.username_pw_set(parametri["TOKEN_TB"])
+    
+    # Configurazione Client 2: HiveMQ
+    client_hive = mqtt.Client(mqtt.CallbackAPIVersion.VERSION1)
 
     try:
-        client.connect(broker, porta_broker, 60)
-        client.loop_start()
-        print(f"Connesso a ThingsBoard MQTT su {broker}:{porta_broker}")
+        print("Connessione ai Broker MQTT...")
+        client_tb.connect(parametri["BROKER_TB"], porta_broker, 60)
+        client_tb.loop_start()
+        print(f"-> Connesso a ThingsBoard ({parametri['BROKER_TB']})")
+
+        client_hive.connect(parametri["BROKER_HIVEMQ"], porta_broker, 60)
+        client_hive.loop_start()
+        print(f"-> Connesso a HiveMQ ({parametri['BROKER_HIVEMQ']})")
     except Exception as e:
-        print(f"Errore connessione MQTT a ThingsBoard: {e}")
+        print(f"Errore critico durante la connessione MQTT: {e}")
         return
 
+    # Avvio del Server Socket
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as server:
         server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         server.bind((ip_server, porta_server))
         server.listen()
         server.settimeout(1.0)
 
-        print(f"Gateway IoT in attesa di dati su {ip_server}:{porta_server}...")
+        print(f"\nGateway IoT attivo! In attesa di connessioni socket su {ip_server}:{porta_server}...\n")
 
         try:
             while True:
@@ -146,19 +141,19 @@ def main():
                     conn, addr = server.accept()
                     thread_client = threading.Thread(
                         target=gestisci_client,
-                        args=(conn, addr, parametri, client),
+                        args=(conn, addr, parametri, client_tb, client_hive),
                         daemon=True
                     )
                     thread_client.start()
                 except socket.timeout:
                     pass
-
         except KeyboardInterrupt:
-            print("\nSpegnimento manuale del Gateway in corso.")
+            print("\nSpegnimento del Gateway in corso...")
         finally:
-            client.loop_stop()
-            client.disconnect()
-
+            client_tb.loop_stop()
+            client_tb.disconnect()
+            client_hive.loop_stop()
+            client_hive.disconnect()
 
 if __name__ == "__main__":
     main()

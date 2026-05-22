@@ -49,7 +49,7 @@ def on_message(client, userdata, msg):
 
 
 def main():
-    client = mqtt.Client()
+    client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION1)
     
     # Configura il token se presente nel file JSON
     if TOKEN:

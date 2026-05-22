@@ -2,8 +2,7 @@
   "topic": "iotnavi/+/misure",
   "broker": {
     "host": "broker.hivemq.com",
-    "porta": 1883,
-    "token": "CnhT8ROQ85zNRf2iitYj"
+    "porta": 1883
   },
   "dbfile": {
     "file": "dbplatform.json",
