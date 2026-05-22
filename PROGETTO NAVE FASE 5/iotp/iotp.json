@@ -3,7 +3,7 @@
   "broker": {
     "host": "broker.hivemq.com",
     "porta": 1883,
-    "token": "Wq6DY3KiyIqMaOizBil7"
+    "token": "CnhT8ROQ85zNRf2iitYj"
   },
   "dbfile": {
     "file": "dbplatform.json",
