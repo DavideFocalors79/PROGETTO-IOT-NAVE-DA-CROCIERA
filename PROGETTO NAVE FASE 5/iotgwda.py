@@ -4,7 +4,6 @@ import threading
 from pathlib import Path
 
 import paho.mqtt.client as mqtt
-import cripto
 
 BASE_DIR = Path(__file__).resolve().parent
 CONFIG_DIR = BASE_DIR / "configurazione"
@@ -23,25 +22,49 @@ def recv_line(sock):
     return data.decode("utf-8", errors="replace").strip()
 
 
-def crea_dato_iotp(dato_dc, identita_giot, n_decimali):
+def build_telemetry(dato_dc, identita_giot, n_decimali):
+    osservazione = dato_dc["osservazione"]
+    sensore = dato_dc.get("sensore", {})
+
     return {
-        "cabina": dato_dc["camera"],
-        "ponte": dato_dc["ponte"],
-        "temperaturam": round(dato_dc["osservazione"]["temperatura"], n_decimali),
-        "umiditam": round(dato_dc["osservazione"]["umidita"], n_decimali),
-        "dataeora": dato_dc["osservazione"]["dataeora"],
-        "invionumero": dato_dc["osservazione"]["rilevazione"],
-        "identita": identita_giot
+        "temperature": round(osservazione["temperatura"], n_decimali),
+        "humidity": round(osservazione["umidita"], n_decimali),
+        "cabin": dato_dc["camera"],
+        "deck": dato_dc["ponte"],
+        "ship": identita_giot,
+        "deviceId": dato_dc["identita"],
+        "sensorName": sensore.get("nome", "DHT11"),
+        "tMin": sensore.get("tmin", 0),
+        "tMax": sensore.get("tmax", 50),
+        "uMin": sensore.get("umin", 0),
+        "uMax": sensore.get("umax", 100),
+        "serialNumber": osservazione["rilevazione"]
     }
 
 
+def publish_telemetry(client, telemetry, ts=None):
+    if ts is None:
+        payload = telemetry
+    else:
+        payload = {
+            "ts": ts * 1000,
+            "values": telemetry
+        }
+
+    result = client.publish(
+        "v1/devices/me/telemetry",
+        json.dumps(payload, ensure_ascii=False),
+        qos=1
+    )
+    return result
+
+
 def gestisci_client(conn, addr, parametri, client_mqtt):
-    print(f"\n[+] Nuovo sensore connesso da: {addr}")
+    print(f"\n[+] Nuovo dispositivo connesso da: {addr}")
 
     tempo_rilevazione = int(parametri["TEMPO_RILEVAZIONE"])
     n_decimali = int(parametri["N_DECIMALI"])
     identita_giot = parametri["IDENTITA_GIOT"]
-    topic_mqtt = parametri["TOPIC"]
 
     with conn:
         parametri_init = {
@@ -62,24 +85,22 @@ def gestisci_client(conn, addr, parametri, client_mqtt):
                     break
 
                 dato_dc = json.loads(line)
-                print(f"[{addr[1]}] DatoIoT ricevuto da dc.py:")
+
+                print(f"[{addr[1]}] Dato ricevuto da dc.py:")
                 print(json.dumps(dato_dc, indent=4, ensure_ascii=False))
 
-                dato_iotp = crea_dato_iotp(dato_dc, identita_giot, n_decimali)
+                timestamp = int(dato_dc["osservazione"]["dataeora"])
+                telemetry = build_telemetry(dato_dc, identita_giot, n_decimali)
 
-                payload_json = json.dumps(dato_iotp, ensure_ascii=False)
-                payload_criptato = cripto.criptazione(payload_json)
+                print(f"[{addr[1]}] Telemetria inviata a ThingsBoard:")
+                print(json.dumps(telemetry, indent=4, ensure_ascii=False))
 
-                print(f"[{addr[1]}] DatoIoT elaborato dal gateway:")
-                print(json.dumps(dato_iotp, indent=4, ensure_ascii=False))
+                result = publish_telemetry(client_mqtt, telemetry, timestamp)
 
-                print(f"[{addr[1]}] Invio criptato su topic MQTT {topic_mqtt}")
-                risultato = client_mqtt.publish(topic_mqtt, payload_criptato)
-
-                if risultato.rc != mqtt.MQTT_ERR_SUCCESS:
-                    print(f"[{addr[1]}] Errore publish MQTT: codice {risultato.rc}")
+                if result.rc == mqtt.MQTT_ERR_SUCCESS:
+                    print(f"[{addr[1]}] Invio MQTT a ThingsBoard completato")
                 else:
-                    print(f"[{addr[1]}] Publish MQTT eseguito correttamente")
+                    print(f"[{addr[1]}] Errore publish MQTT: codice {result.rc}")
 
             except json.JSONDecodeError as e:
                 print(f"[{addr[1]}] JSON non valido ricevuto dal client: {e}")
@@ -87,7 +108,7 @@ def gestisci_client(conn, addr, parametri, client_mqtt):
                 print(f"[{addr[1]}] Errore di comunicazione con il client: {e}")
                 break
 
-    print(f"[-] Sensore {addr} disconnesso")
+    print(f"[-] Dispositivo {addr} disconnesso")
 
 
 def main():
@@ -98,17 +119,17 @@ def main():
     porta_server = int(parametri["PORTA_SERVER"])
     broker = parametri["BROKER"]
     porta_broker = int(parametri["PORTA_BROKER"])
-    topic = parametri["TOPIC"]
+    token_tb = parametri["TOKEN_TB"]
 
     client = mqtt.Client()
+    client.username_pw_set(token_tb)
 
     try:
         client.connect(broker, porta_broker, 60)
         client.loop_start()
-        print(f"Connesso al broker MQTT {broker}:{porta_broker}")
-        print(f"Topic di pubblicazione: {topic}")
+        print(f"Connesso a ThingsBoard MQTT su {broker}:{porta_broker}")
     except Exception as e:
-        print(f"Errore connessione al broker MQTT: {e}")
+        print(f"Errore connessione MQTT a ThingsBoard: {e}")
         return
 
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as server:
